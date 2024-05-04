@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="output.css" />
+	<script type="module" src="index.js"></script>
+	<link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+	<title>Trade Blade</title>
+</head>
+
+<body class="bg-custom-purple-3">
+	<div>
+		<header class="h-[52px] md:h-[68px] max-w-8xl mx-auto flex items-center justify-between md:px-20">
+			<a href="/" class="h-full">
+				<img src="images/logo-tb.svg" alt="Trade Blade Logo" class="h-full" />
+			</a>
+
+			<nav>
+				<button id="menu-open" class="md:hidden">
+					<img src="images/menu.svg" alt="Menu" class="mr-2.5" />
+				</button>
+
+				<div id="menu-list"
+					class="fixed top-0 z-20 flex flex-col justify-between w-full h-full md:items-center md:gap-20 md:flex-row -left-full bg-custom-indigo-1 md:static md:bg-transparent">
+					<button class="absolute md:hidden top-2 right-2">
+						<img src="images/x.svg" alt="close men" />
+					</button>
+					<ul
+						class="px-4 py-20 space-y-8 text-2xl font-medium text-white md:text-sm md:p-0 md:space-x-8 md:flex md:space-y-0">
+						<li>
+							<a href="#цифры" class="hover:text-custom-purple-3 md:hover:text-custom-indigo-2">Цифры </a>
+						</li>
+						<li>
+							<a href="#сделки-онлайн" class="hover:text-custom-purple-3 md:hover:text-custom-indigo-2">Сделки
+								онлайн</a>
+						</li>
+						<li>
+							<a href="#о-компании" class="hover:text-custom-purple-3 md:hover:text-custom-indigo-2">О компании</a>
+						</li>
+						<li>
+							<a href="#тарифы" class="hover:text-custom-purple-3 md:hover:text-custom-indigo-2">Тарифы</a>
+						</li>
+						<li>
+							<a href="#faq" class="hover:text-custom-purple-3 md:hover:text-custom-indigo-2">FAQ</a>
+						</li>
+					</ul>
+
+					<div class="flex gap-4 p-4 md:flex-row-reverse md:p-0">
+						<button class="w-full md:w-36 h-[52px] font-medium shadow shadow-custom-cyan-2 bg-custom-cyan-2 md:text-sm">
+							РЕГИСТРАЦИЯ
+						</button>
+						<button
+							class="w-full font-medium md:w-20 h-[52px] bg-custom-cyan-2/20 text-custom-cyan-2 border-2 border-custom-cyan-2 rounded md:text-sm">
+							ВХОД
+						</button>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- HERO -->
+			<section
+				class="flex-row-reverse justify-between px-4 pt-10 pb-16 mx-auto md:pb-44 md:px-20 max-w-8xl md:flex md:pt-40">
+				<img data-anime-image src="images/hero.webp" alt="" class="h-32 md:h-full" />
+
+				<div class="md:w-1/2">
+					<h1 data-anime-text class="mt-8 text-4xl font-bold text-white md:leading-tight md:mt-0 md:text-6xl">
+						МОМЕНТАЛЬНО КОПИРУЙ СДЕЛКИ ПРОФИ ТРЕЙДЕРОВ
+					</h1>
+					<p data-anime-text class="mt-3 text-custom-gray-0 opacity-80">
+						Начни копировать сделки с успешной командой
+						профессиональных трейдеров в автоматическом режиме.
+					</p>
+
+					<div data-anime-input class="relative mt-6 md:w-11/12">
+						<input type="email" placeholder="ВАШ E-MAIL"
+							class="w-full h-12 p-4 text-white rounded pr-28 bg-custom-purple-4 placeholder:font-medium placeholder:text-sm">
+						<button class="absolute top-0.5 right-0.5 w-24 rounded h-11 bg-custom-cyan-2 ">НАЧАТЬ</button>
+					</div>
+					<p data-anime-text class="mt-3 text-sm text-white opacity-30">5 дней бесплатного пользования</p>
+				</div>
+			</section>
+
+			<!-- ЦИФРЫ -->
+			<section id="цифры" class="relative pt-6 pb-12 bg-white md:py-16">
+				<div
+					class="absolute -left-1 z-10 w-2/3 h-6 bg-white  -top-5 skew-x-[30deg] rounded-tr md:h-16 md:-top-14 md:-left-4 md:w-1/2">
+				</div>
+
+				<div class="justify-between px-4 mx-auto max-w-8xl md:px-20 md:flex">
+					<div>
+						<h2 class="font-bold text-[28px] md:text-[44px]">ЦИФРЫ</h2>
+						<p class="text-sm opacity-50">Сентябрь 2022</p>
+					</div>
+
+					<div class="flex justify-between mt-10 md:w-1/2 md:mt-0">
+						<div>
+							<p class="text-sm opacity-80">ТОРГОВОЙ <br class="md:hidden"> ПРИБЫЛИ</p>
+							<p data-anime-counter="2756" class="text-4xl font-medium md:text-6xl text-custom-indigo-2">
+								00%
+							</p>
+						</div>
+
+						<div>
+							<p class="text-sm opacity-80">ФЬЮЧЕРСНЫХ <br class="md:hidden"> И СПОТОВЫХ СДЕЛОК</p>
+							<p data-anime-counter="67" class="text-4xl font-medium md:text-6xl text-custom-indigo-2">
+								0
+							</p>
+						</div>
+					</div>
+
+					<div class="mt-8 md:mt-0">
+						<p class="text-sm opacity-80 md:min-w-56">ПРИБЫЛЬ <br class="md:hidden"> ПОДПИСЧИКОВ</p>
+						<p data-anime-counter="375000" class="text-4xl font-medium md:text-6xl text-custom-indigo-2">
+							0
+						</p>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- СДЕЛКИ -->
+			<section data-anime-image id="сделки-онлайн" class="relative pt-12 pb-14 md:pb-40">
+				<div class="px-4 mx-auto md:pl-20 max-w-8xl">
+					<h2 class="text-white font-bold text-[28px]">ПРОШЕДШИЕ СДЕЛКИ</h2>
+					<div class="flex items-center text-sm text-custom-green opacity-90">
+						<span class="pb-1 text-3xl">•</span>
+						Онлайн
+					</div>
+				</div>
+
+				<div id="custom-scroll" class="flex h-56 gap-2 pl-4 mx-auto overflow-x-scroll md:gap-5 md:pl-20 max-w-8xl">
+					<div
+						class="flex flex-col min-w-[300px] min-h-52 h-52 relative justify-between p-4 pb-3 bg-custom-indigo-1 [clip-path:polygon(0_0,0_100%,100%_100%,100%_25%,85%_0)] custom-scroll">
+						<div>
+							<div class="text-xl font-medium text-white">NEAR/USDT</div>
+							<div class="text-lg opacity-40 text-white/40">SPOT · 1 мин. назад</div>
+						</div>
+						<div>
+							<div class="text-sm font-medium text-white/70">ПРИБЫЛЬ</div>
+							<div class="text-[28px] text-custom-green">58.6206% ↑</div>
+							<div class="flex justify-between">
+								<span class="text-sm font-medium text-white/40">Цель 4</span>
+								<span class="text-sm text-white/40">Дата входа 06.10.2022</span>
+							</div>
+						</div>
+						<img src="images/logo-transparent.webp" alt="transparent logo" class="absolute right-0 h-40 top-5">
+					</div>
+
+					<div
+						class="flex flex-col min-w-[300px] min-h-52 h-52 relative justify-between p-4 pb-3 bg-custom-indigo-1 [clip-path:polygon(0_0,0_100%,100%_100%,100%_25%,85%_0)] custom-scroll">
+						<div>
+							<div class="text-xl font-medium text-white">BTC/USDT</div>
+							<div class="text-lg opacity-40 text-white/40">SPOT · 1 мин. назад</div>
+						</div>
+						<div>
+							<div class="text-sm font-medium text-white/70">ПРИБЫЛЬ</div>
+							<div class="text-[28px] text-custom-green">6.02% ↑</div>
+							<div class="flex justify-between">
+								<span class="text-sm font-medium text-white/40">Цель 4</span>
+								<span class="text-sm text-white/40">Дата входа 06.10.2022</span>
+							</div>
+						</div>
+						<img src="images/logo-transparent.webp" alt="transparent logo" class="absolute right-0 h-40 top-5">
+					</div>
+
+					<div
+						class="flex flex-col min-w-[300px] min-h-52 h-52 relative justify-between p-4 pb-3 bg-custom-indigo-1 [clip-path:polygon(0_0,0_100%,100%_100%,100%_25%,85%_0)] custom-scroll">
+						<div>
+							<div class="text-xl font-medium text-white">ETH/USDT</div>
+							<div class="text-lg opacity-40 text-white/40">SPOT · 1 мин. назад</div>
+						</div>
+						<div>
+							<div class="text-sm font-medium text-white/70">ПРИБЫЛЬ</div>
+							<div class="text-[28px] text-custom-green">16.32% ↑</div>
+							<div class="flex justify-between">
+								<span class="text-sm font-medium text-white/40">Цель 4</span>
+								<span class="text-sm text-white/40">Дата входа 06.10.2022</span>
+							</div>
+						</div>
+						<img src="images/logo-transparent.webp" alt="transparent logo" class="absolute right-0 h-40 top-5">
+					</div>
+
+					<div
+						class="flex flex-col min-w-[300px] min-h-52 h-52 relative justify-between p-4 pb-3 bg-custom-indigo-1 [clip-path:polygon(0_0,0_100%,100%_100%,100%_25%,85%_0)] custom-scroll">
+						<div>
+							<div class="text-xl font-medium text-white">NEAR/USDT</div>
+							<div class="text-lg opacity-40 text-white/40">SPOT · 1 мин. назад</div>
+						</div>
+						<div>
+							<div class="text-sm font-medium text-white/70">ПРИБЫЛЬ</div>
+							<div class="text-[28px] text-custom-green">0.963% ↑</div>
+							<div class="flex justify-between">
+								<span class="text-sm font-medium text-white/40">Цель 4</span>
+								<span class="text-sm text-white/40">Дата входа 06.10.2022</span>
+							</div>
+						</div>
+						<img src="images/logo-transparent.webp" alt="transparent logo" class="absolute right-0 h-40 top-5">
+					</div>
+
+					<div
+						class="flex flex-col min-w-[300px] min-h-52 h-52 relative justify-between p-4 pb-3 bg-custom-indigo-1 [clip-path:polygon(0_0,0_100%,100%_100%,100%_25%,85%_0)] custom-scroll">
+						<div>
+							<div class="text-xl font-medium text-white">NEAR/USDT</div>
+							<div class="text-lg opacity-40 text-white/40">SPOT · 1 мин. назад</div>
+						</div>
+						<div>
+							<div class="text-sm font-medium text-white/70">ПРИБЫЛЬ</div>
+							<div class="text-[28px] text-custom-green">58.6206% ↑</div>
+							<div class="flex justify-between">
+								<span class="text-sm font-medium text-white/40">Цель 4</span>
+								<span class="text-sm text-white/40">Дата входа 06.10.2022</span>
+							</div>
+						</div>
+						<img src="images/logo-transparent.webp" alt="transparent logo" class="absolute right-0 h-40 top-5">
+					</div>
+
+					<div
+						class="flex flex-col min-w-[300px] min-h-52 h-52 relative justify-between p-4 pb-3 bg-custom-indigo-1 [clip-path:polygon(0_0,0_100%,100%_100%,100%_25%,85%_0)] custom-scroll">
+						<div>
+							<div class="text-xl font-medium text-white">NEAR/USDT</div>
+							<div class="text-lg opacity-40 text-white/40">SPOT · 1 мин. назад</div>
+						</div>
+						<div>
+							<div class="text-sm font-medium text-white/70">ПРИБЫЛЬ</div>
+							<div class="text-[28px] text-custom-green">58.6206% ↑</div>
+							<div class="flex justify-between">
+								<span class="text-sm font-medium text-white/40">Цель 4</span>
+								<span class="text-sm text-white/40">Дата входа 06.10.2022</span>
+							</div>
+						</div>
+						<img src="images/logo-transparent.webp" alt="transparent logo" class="absolute right-0 h-40 top-5">
+					</div>
+
+					<div
+						class="flex flex-col min-w-[300px] min-h-52 h-52 relative justify-between p-4 pb-3 bg-custom-indigo-1 [clip-path:polygon(0_0,0_100%,100%_100%,100%_25%,85%_0)] custom-scroll">
+						<div>
+							<div class="text-xl font-medium text-white">NEAR/USDT</div>
+							<div class="text-lg opacity-40 text-white/40">SPOT · 1 мин. назад</div>
+						</div>
+						<div>
+							<div class="text-sm font-medium text-white/70">ПРИБЫЛЬ</div>
+							<div class="text-[28px] text-custom-green">58.6206% ↑</div>
+							<div class="flex justify-between">
+								<span class="text-sm font-medium text-white/40">Цель 4</span>
+								<span class="text-sm text-white/40">Дата входа 06.10.2022</span>
+							</div>
+						</div>
+						<img src="images/logo-transparent.webp" alt="transparent logo" class="absolute right-0 h-40 top-5">
+					</div>
+
+					<div
+						class="flex flex-col min-w-[300px] min-h-52 h-52 relative justify-between p-4 pb-3 bg-custom-indigo-1 [clip-path:polygon(0_0,0_100%,100%_100%,100%_25%,85%_0)] custom-scroll">
+						<div>
+							<div class="text-xl font-medium text-white">NEAR/USDT</div>
+							<div class="text-lg opacity-40 text-white/40">SPOT · 1 мин. назад</div>
+						</div>
+						<div>
+							<div class="text-sm font-medium text-white/70">ПРИБЫЛЬ</div>
+							<div class="text-[28px] text-custom-green">58.6206% ↑</div>
+							<div class="flex justify-between">
+								<span class="text-sm font-medium text-white/40">Цель 4</span>
+								<span class="text-sm text-white/40">Дата входа 06.10.2022</span>
+							</div>
+						</div>
+						<img src="images/logo-transparent.webp" alt="transparent logo" class="absolute right-0 h-40 top-5">
+					</div>
+
+					<div
+						class="flex flex-col min-w-[300px] min-h-52 h-52 relative justify-between p-4 pb-3 bg-custom-indigo-1 [clip-path:polygon(0_0,0_100%,100%_100%,100%_25%,85%_0)] custom-scroll">
+						<div>
+							<div class="text-xl font-medium text-white">NEAR/USDT</div>
+							<div class="text-lg opacity-40 text-white/40">SPOT · 1 мин. назад</div>
+						</div>
+						<div>
+							<div class="text-sm font-medium text-white/70">ПРИБЫЛЬ</div>
+							<div class="text-[28px] text-custom-green">58.6206% ↑</div>
+							<div class="flex justify-between">
+								<span class="text-sm font-medium text-white/40">Цель 4</span>
+								<span class="text-sm text-white/40">Дата входа 06.10.2022</span>
+							</div>
+						</div>
+						<img src="images/logo-transparent.webp" alt="transparent logo" class="absolute right-0 h-40 top-5">
+					</div>
+
+					<div
+						class="flex flex-col min-w-[300px] min-h-52 h-52 relative justify-between p-4 pb-3 bg-custom-indigo-1 [clip-path:polygon(0_0,0_100%,100%_100%,100%_25%,85%_0)] custom-scroll">
+						<div>
+							<div class="text-xl font-medium text-white">NEAR/USDT</div>
+							<div class="text-lg opacity-40 text-white/40">SPOT · 1 мин. назад</div>
+						</div>
+						<div>
+							<div class="text-sm font-medium text-white/70">ПРИБЫЛЬ</div>
+							<div class="text-[28px] text-custom-green">58.6206% ↑</div>
+							<div class="flex justify-between">
+								<span class="text-sm font-medium text-white/40">Цель 4</span>
+								<span class="text-sm text-white/40">Дата входа 06.10.2022</span>
+							</div>
+						</div>
+						<img src="images/logo-transparent.webp" alt="transparent logo" class="absolute right-0 h-40 top-5">
+					</div>
+				</div>
+
+			</section>
+
+			<!-- О КОМПАНИИ -->
+			<section data-anime-company id="о-компании" class="relative pt-6 bg-white -left-full pb-36 md:py-16 ">
+				<div
+					class="absolute -left-1 z-10 w-2/3 h-6 bg-white  -top-5 skew-x-[30deg] rounded-tr md:h-16 md:-top-14 md:-left-4 md:w-1/2">
+				</div>
+
+				<div class="justify-between md:mx-auto md:max-w-8xl md:flex">
+					<div class="px-4 md:pl-20 md:w-1/3">
+						<h2 class="font-bold text-[28px] md:text-[44px]">О КОМПАНИИ</h2>
+						<p class="mt-5 opacity-80">
+							Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным
+							брокером биржи Binance.
+						</p>
+						<p class="opacity-80">
+							Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и
+							возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+						</p>
+					</div>
+
+					<div class="p-4 absolute -bottom-[121px] md:w-1/2 md:static bg-custom-indigo-1 mx-2.5 rounded mt-10">
+						<p class="text-xl md:text-[28px] md:mt-8 font-medium text-center text-white">
+							Попробуйте сейчас и получите <br> 5 дней бесплатного пользования
+						</p>
+						<div class="relative mx-auto md:w-3/4">
+							<input type="text" placeholder="ВАШ E-MAIL"
+								class="w-full h-12 p-4 mt-5 text-white rounded md:mt-8 opacity-30 bg-custom-purple-4 placeholder:font-medium placeholder:text-sm md:pr-44">
+							<button
+								class="w-full h-12 mt-2 font-medium rounded top-0.5 md:mt-8 md:h-11 md:absolute md:w-40 right-0.5 bg-custom-cyan-2">
+								ПОПРОБОВАТЬ
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ТАРИФЫ -->
+			<section id="тарифы" class="max-w-4xl px-4 pb-20 mx-auto overflow-hidden pt-44">
+				<h2 class="text-white font-bold text-[28px] md:text-[44px]">ТАРИФЫ</h2>
+
+				<div class="flex gap-2 p-0.5 mt-6 md:mt-10 rounded bg-custom-indigo-1 md:w-[calc(50%-10px)]">
+					<button class="w-full text-lg font-bold rounded bg-custom-cyan-2 h-11 md:text-2xl">СПОТ</button>
+					<button class="w-full text-lg font-medium md:text-2xl">ФЬЮЧЕРС</button>
+				</div>
+
+				<div  class="md:flex md:gap-5">
+					<div data-anime-standard class="flex flex-col justify-between py-4 mt-6 border rounded-lg border-custom-indigo-1">
+						<div>
+							<p class="px-4 font-medium text-white md:text-[32px]">STANDARD</p>
+
+							<p class="flex items-center gap-2.5 mt-6 md:mt-14 px-4">
+								<img src="images/checkmark.svg" alt="checkmark">
+								<span class="text-white">Ручной трейдинг</span>
+							<div class="mt-2 border-b border-dashed opacity-20"></div>
+							</p>
+
+							<p class="flex items-center gap-2.5 mt-2 px-4">
+								<img src="images/checkmark.svg" alt="checkmark">
+								<span class="text-white">Автоматическое или полуавтоматическое копирование сделок</span>
+							<div class="mt-2 border-b border-dashed opacity-20"></div>
+							</p>
+
+							<p class="flex items-center gap-2.5 mt-2 px-4">
+								<img src="images/checkmark.svg" alt="checkmark">
+								<span class="text-white">Личный кабинет со статистикой</span>
+							<div class="mt-2 border-b border-dashed opacity-20"></div>
+							</p>
+
+							<p class="flex items-center gap-2.5 mt-2 px-4">
+								<img src="images/checkmark.svg" alt="checkmark">
+								<span class="text-white">Среднесрочные сделки с уровнями набора портфеля</span>
+							<div class="mt-2 border-b border-dashed opacity-20"></div>
+							</p>
+						</div>
+
+						<div>
+							<div class="flex justify-between px-4 mt-6">
+								<div class="flex">
+									<div class="text-4xl font-medium text-white">$234</div>
+									<div class="font-medium text-custom-green">-35%</div>
+								</div>
+								<div class="flex items-center gap-2 p-2 rounded cursor-pointer bg-white/20">
+									<span class="text-white">12 месяцев</span>
+									<img src="images/chevron.svg" alt="chevron">
+								</div>
+							</div>
+
+							<div class="px-4 mt-6">
+								<button
+									class="flex flex-col items-center justify-center w-full rounded-lg shadow h-14 bg-custom-cyan-2 shadow-custom-cyan-2">
+									<div class="font-medium">ПОПРОБОВАТЬ</div>
+									<div class="text-xs opacity-55">5 дней бесплатно</div>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div data-anime-vip class="py-4 mt-6 rounded-lg bg-custom-indigo-1 ">
+						<p class="px-4 font-medium text-white md:text-[32px]">VIP</p>
+
+						<p class="flex items-center gap-2.5 mt-6 px-4 md:mt-14">
+							<img src="images/checkmark.svg" alt="checkmark">
+							<span class="text-white">Ручной трейдинг</span>
+						<div class="mt-2 border-b border-dashed opacity-20"></div>
+						</p>
+
+						<p class="flex items-center gap-2.5 mt-2 px-4">
+							<img src="images/checkmark.svg" alt="checkmark">
+							<span class="text-white">Автоматическое или полуавтоматическое копирование сделок</span>
+						<div class="mt-2 border-b border-dashed opacity-20"></div>
+						</p>
+
+						<p class="flex items-center gap-2.5 mt-2 px-4">
+							<img src="images/checkmark.svg" alt="checkmark">
+							<span class="text-white">Личный кабинет со статистикой</span>
+						<div class="mt-2 border-b border-dashed opacity-20"></div>
+						</p>
+
+						<p class="flex items-center gap-2.5 mt-2 px-4">
+							<img src="images/checkmark.svg" alt="checkmark">
+							<span class="text-white">Краткосрочные, среднесрочные и инвест сделки</span>
+						<div class="mt-2 border-b border-dashed opacity-20"></div>
+						</p>
+
+						<p class="flex items-center gap-2.5 mt-2 px-4">
+							<img src="images/checkmark.svg" alt="checkmark">
+							<span class="text-white">Доступ в Vip чат с командой</span>
+						<div class="mt-2 border-b border-dashed opacity-20"></div>
+						</p>
+
+						<p class="flex items-center gap-2.5 mt-2 px-4">
+							<img src="images/checkmark.svg" alt="checkmark">
+							<span class="text-white">Наш авторский курс по трейдингу</span>
+						<div class="mt-2 border-b border-dashed opacity-20"></div>
+						</p>
+
+						<div class="flex justify-between px-4 mt-6">
+							<div class="flex">
+								<div class="text-4xl font-medium text-white">$585</div>
+								<div class="font-medium text-custom-green">-35%</div>
+							</div>
+							<div class="flex items-center gap-2 p-2 rounded cursor-pointer bg-white/20">
+								<span class="text-white">12 месяцев</span>
+								<img src="images/chevron.svg" alt="chevron">
+							</div>
+						</div>
+
+						<div class="px-4 mt-6">
+							<button
+								class="flex flex-col items-center justify-center w-full rounded-lg shadow h-14 bg-custom-cyan-2 shadow-custom-cyan-2">
+								<div class="font-medium">ПОПРОБОВАТЬ</div>
+								<div class="text-xs opacity-55">5 дней бесплатно</div>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- FAQ -->
+			<section id="faq" class="relative bg-white py-14 md:py-24">
+				<div class="max-w-4xl px-4 mx-auto">
+					<h2 class="text-[28px] font-bold md:text-[44px]">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+
+					<details class="p-4 rounded-lg bg-custom-indigo-1 [&_img]:open:-rotate-180">
+						<summary class="flex items-center justify-between text-white list-none cursor-pointer">
+							<span class="text-xl font-medium">Что такое TradeBlade</span>
+							<img src="images/chevron.svg" alt="chevron">
+						</summary>
+						<p class="mt-3 text-white/80">
+							Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным
+							брокером биржи Binance.
+						</p>
+						<p class="mt-6 text-white/80">
+							Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и
+							возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+						</p>
+					</details>
+
+					<details class="p-4 rounded-lg bg-custom-gray-2 [&_img]:open:-rotate-180 mt-3">
+						<summary class="flex items-center justify-between list-none cursor-pointer">
+							<span class="text-xl font-medium">Что TradeBlade предлагает инвесторам</span>
+							<img src="images/chevron-black.svg" alt="chevron">
+						</summary>
+						<p class="mt-3">
+							Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным
+							брокером биржи Binance.
+						</p>
+						<p class="mt-6">
+							Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и
+							возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+						</p>
+					</details>
+
+					<details class="p-4 mt-3 rounded-lg bg-custom-gray-2 [&_img]:open:-rotate-180">
+						<summary class="flex items-center justify-between list-none cursor-pointer">
+							<span class="text-xl font-medium">Должен ли я перевести свои средства на TradeBlade</span>
+							<img src="images/chevron-black.svg" alt="chevron">
+						</summary>
+						<p class="mt-3">
+							Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным
+							брокером биржи Binance.
+						</p>
+						<p class="mt-6">
+							Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и
+							возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+						</p>
+					</details>
+				</div>
+
+			</section>
+
+			<footer class="flex flex-col md:flex-row px-4 pb-5 pt-10 mx-auto text-white max-w-8xl md:min-h-[350px]">
+				<div class="flex justify-between pb-5 md:flex-col md:w-2/3">
+					<p class="opacity-40">БЫСТРАЯ НАВИГАЦИЯ</p>
+
+					<div class="flex flex-col gap-4 opacity-75 md:flex-row">
+						<a href="#цифры">ЦИФРЫ</a>
+						<a href="#сделки-онлайн">СДЕЛКИ ОНЛАЙН</a>
+						<a href="#о-компании">О КОМПАНИИ</a>
+						<a href="#тарифы">ТАРИФЫ</a>
+						<a href="#faq">FAQ</a>
+					</div>
+				</div>
+
+				<div class="flex flex-col justify-between gap-10">
+					<img src="images/logo-tb.svg" alt="Trade Blade Logo" class="w-40 -ml-5 md:ml-auto" />
+					<p class="text-sm opacity-50">© 2022 TradeBlade. All rights reserved</p>
+				</div>
+			</footer>
+		</main>
+	</div>
+</body>
+
+</html>
